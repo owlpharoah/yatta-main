@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+  background: url("gradii-1920x1080.png");
+}
+
+.links{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  top: 10px;
+  
+}
+
+.links button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.links img{
+  filter: brightness(0) invert(1);
+}
+
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btnhousing{
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+}
+
+/* .btnhousing>input{
+  width: 50%;
+  height: 2rem;
+  border-radius: 10rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-family: monospace;
+  border: 1px groove goldenrod;
+  backdrop-filter: blur(100rem);
+  background-color: transparent;
+  box-shadow:inset 10px 10px 10px -1px rgba(10,99,169,0.16),
+             inset -10px -10px 10px -1px rgba(255,255,255,0.3);
+  cursor: pointer;
+  caret-color: goldenrod;
+} */
+
+.btnhousing>h1{
+  font-family: Pacifico, cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 100px;
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  transition: letter-spacing 2s;
+}
+
+.btnhousing>h1:hover{
+  letter-spacing: 7px;
+}
+
+
+.btnhousing>p{
+  font-family: Outfit;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  margin-top: 0;
+  color: white;
+ 
+}
+
+.inputbox{
+  border: 1px groove goldenrod;
+  width: 60%;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  backdrop-filter: blur(100rem);
+  background-color: transparent;
+  box-shadow:inset 10px 10px 10px -1px rgba(10,99,169,0.16),
+             inset -10px -10px 10px -1px rgba(255,255,255,0.3);
+  cursor: pointer;
+  caret-color: goldenrod;
+  position: relative;
+}
+
+.inputbox input{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family:Outfit;
+  flex:1;
+  height: 75%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: whitesmoke;
+}
+
+.inputbox button{
+  align-items: center;
+  
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  backdrop-filter: blur(1px);
+  box-shadow:  20px 20px 60px #c56d17,
+             -20px -20px 60px #ff931f;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.inputbox button:active{
+  box-shadow: inset 20px 20px 60px #c56d17,
+             inset -20px -20px 60px #ff931f;
+}
+
+/* 
+THIS IS THE END OF THE MAIN CSS ----------------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 600px)
+{
+
+ 
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnhousing{
+  display: flex;
+  justify-content: center;
+  align-items: center;      
+  width: 50%;
+  height: 50%;
+  flex-direction: column;
+  
+}
+
+
+.btnhousing>h1{
+  font-family: Pacifico, cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 50px;
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  transition: letter-spacing 2s;
+}
+
+.btnhousing>h1:hover{
+  letter-spacing: 7px;
+}
+
+
+.btnhousing>p{
+  font-family: Outfit;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  margin-top: 0;
+  color: white;
+  text-align: center;
+ 
+}
+
+.inputbox{
+  border: 1px groove goldenrod;
+  width: 60vw;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 10px;
+  backdrop-filter: blur(100rem);
+  background-color: transparent;
+  box-shadow:inset 10px 10px 10px -1px rgba(10,99,169,0.16),
+             inset -10px -10px 10px -1px rgba(255,255,255,0.3);
+  cursor: pointer;
+  caret-color: goldenrod;
+  position: relative;
+}
+
+.inputbox input{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family:Outfit;
+  flex:1 1 auto;
+  height: 75%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: whitesmoke;
+  min-width: 0;
+}
+
+.inputbox button{
+  align-items: center;
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  backdrop-filter: blur(1px);
+  box-shadow:  20px 20px 60px #c56d17,
+             -20px -20px 60px #ff931f;
+  outline:none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.inputbox button:active{
+  box-shadow: inset 20px 20px 60px #c56d17,
+             inset -20px -20px 60px #ff931f;
+}
+
+
+}
