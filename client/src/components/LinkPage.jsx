@@ -13,7 +13,7 @@ function LinkPage({setThumbnail , setTitle ,setDesc , setTrans,setLink,Link}) {
     {
       try{
         setLoading(true)
-      let compdata = await axios.post("http://localhost:3000/link",{
+      let compdata = await axios.post("https://yatta-server-side.onrender.com/link",{
         "link" : Link})
       
       setTitle(compdata.data.titdesc.title)
