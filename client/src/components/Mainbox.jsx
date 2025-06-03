@@ -39,7 +39,7 @@ const Mainbox = ({Thumbnail , Title , Link, Desc , Trans}) => {
     setLoading(true)
     try{
       
-    let model_res = await axios.post("http://localhost:3000/query",{
+    let model_res = await axios.post("https://yatta-server-side.onrender.com/query",{
       'title':Title,
       'desc':Desc,
       'transc':Trans,

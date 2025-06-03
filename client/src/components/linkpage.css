@@ -149,7 +149,13 @@ THIS IS THE END OF THE MAIN CSS ------------------------------------------------
 @media(max-width: 600px)
 {
 
- 
+.links{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
 .main{
   height: 100vh;
   width: 100vw;

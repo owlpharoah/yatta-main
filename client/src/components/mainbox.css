@@ -242,6 +242,13 @@
 
 @media (max-width:600px)
 {
+
+    *{
+       
+    }
+
+
+
     .mbox{
     display: flex;
     align-items: center;
@@ -268,7 +275,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2px;
+    gap: 20px;
 }
 
 .one , .two{
@@ -340,6 +347,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 
 }
 
